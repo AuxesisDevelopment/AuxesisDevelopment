@@ -1,0 +1,306 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--js-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Document</title>
+    <style>
+        body {
+            /* font-family: Poppins; */
+            font: 400 15px Lato, sans-serif;
+            /* line-height: 1.8; */
+            /* color: #000000; */
+        }
+
+        .aboutbg {
+            background: #ffffff !important;
+            border-radius: 50px;
+            box-shadow: 10px 10px 1px rgb(0 0 0);
+        }
+
+        .custom-bg1 {
+            background: rgb(0, 0, 0) !important;
+        }
+
+        .custom-bg {
+            background: #12318D !important;
+        }
+
+        .homepage {
+            /* background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(bg.jpg); */
+            background-image: url(Group.jpg);
+            width: 100%;
+            height: 100vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+
+        .container-fluid {
+            padding: 60px 50px;
+        }
+
+        .project-slider__description__text__header {
+            font-size: 50px;
+            font-weight: 700;
+            line-height: 50px;
+            color: #fff;
+            width: 80%;
+            text-transform: uppercase;
+        }
+
+        .project-slider__description__text__subheader {
+            margin-top: 12px;
+            font-size: 24px;
+            font-weight: 300;
+            line-height: 29px;
+            color: rgba(255, 255, 255, .56);
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 20px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            color: rgb(235, 129, 0);
+            opacity: 20.1;
+        }
+
+        .fa-facebook {
+
+            color: rgb(255, 255, 255);
+        }
+
+        .fa-twitter {
+
+            color: rgb(0, 0, 0);
+        }
+
+        .fa-google {
+            color: rgb(0, 0, 0);
+        }
+
+        .fa-instagram {
+            color: rgb(255, 255, 255);
+        }
+
+        .fa-envelope {
+            color: rgb(0, 0, 0);
+        }
+
+        .weare {
+            padding: 160px 120px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .container,
+        .main-content {
+            padding-left: 5%;
+            padding-right: 5%;
+            min-height: 105%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .weare__title {
+            font-size: 40px;
+            font-family: Poppins;
+            color: #686565;
+            margin: 0 auto;
+            line-height: 50px;
+        }
+
+        .weare__p {
+            color: #818792;
+            font-family: Poppins;
+            font-size: 24px;
+            padding-top: 30px;
+            width: 90%;
+            margin: 0 auto;
+            line-height: 40px;
+            /* margin-left: 20%;
+            margin-right: 20%; */
+        }
+
+        .nav-link {
+            margin-left: 20px;
+            text-transform: uppercase;
+        }
+
+        .bg-grey {
+            background-color: #f6f6f6;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- to make transperant navbar -->
+    <!-- <nav class="navbar navbar-expand-lg fixed-top navbar-light"> -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark    custom-bg">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="Group 1.png" alt="" width="150" height="60" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#service">SERVICES</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#about">About Us</a>
+                    </li>
+                    <!-- <li class="nav-item active">
+                        <a class="nav-link" href="#project">PROJECTS</a>
+                    </li> -->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- home page -->
+    <div class="container-fluid bg-3 custom-bg" id="home">
+        <div class="row" style="padding-top: 50px;">
+            <div class="col-md-7 p-5">
+                <div style="padding-bottom: 45px;">
+                    <H1><span style="color: aliceblue;font-size: 70px;">Auxesis</span></H1>
+                    <h3 style="padding-left:50px ;color: aliceblue;">Web &amp; Mobile App Development</h3>
+                </div>
+                <div class="project-slider__description__text__header">
+                    <span class="br">WE BUILD SCALABLE &amp; SMART SOLUTIONS</span>
+                </div>
+
+                <div class="project-slider__description__text__subheader">We are available for work, get in touch
+                </div>
+            </div>
+            <div class="col-md-4 p-5">
+                <img src="computer-monitoring.svg" alt="" width="100%" height="400"
+                    class="d-inline-block align-text-top">
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- what we does -->
+    <section class="weare custom-bg1" id="service">
+        <div class="main-content">
+            <h1 class="weare__title">We are a websites &amp; mobile application development team that tune's your business ideas into
+                reality</h1>
+            <p class="weare__p">We build Portfolio website, Ecommerce web application and mobile appalications.
+                Maintaining the sustainable use of technology
+                web and application Development software.
+                To deliver projects on time and maintain
+                the top-notch code standards.</p>
+        </div>
+    </section>
+
+    <!-- <div class="container">
+        <div class="row">
+            <section class="weare custom-bg1 ">
+                <div class="main-content">
+                    <h1 class="weare__title">We are a web &amp; app development Team that turns your ideas into reality of your
+                        business.</h1>
+                    <p class="weare__p">We build Portfolios website, Ecommerce web application and mobile appalications. We here
+                        to deliver projects on time and maintain
+                        the top-notch code standards.</p>
+                </div>
+            </section>
+        </div>
+    </div> -->
+
+    <div class="container-fluid bg-grey" id="about">
+        <div class="row p-3">
+            <div class="col-md-7 text-center p-5">
+                <div class="container aboutbg p-3">
+                    <h5 style="color:#12318D ; padding-top: 20px;"><strong>KNOW WHO WE ARE</strong></h5><br>
+                    <h4 class="p-3" style="line-height: 35px;">This is Auxesis team. We love progrmming that is our
+                        passion. We are here to
+                        assist you with all your virtual base arrangements, at sipmly a tick. The Auxesis that provides
+                        you the web services. We aways been creating new and prominent ideas and services to capture the
+                        future as well as the present requirements of client and market. We are full-stack
+                        developers from mumbai.
+                        We create interactive dynamic user experiences.
+                    </h4><br>
+                </div>
+            </div>
+            <div class="col-md-4 text-center p-5">
+                <img src="employee-monitoring.svg" alt="" width="100%" height="350" class="d-inline-block align-text-top">
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer custom-bg1" id="contact">
+        <div class="container-fluid py-2">
+            <h2 style="color:rgb(235, 129, 0) ;">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-5" style="padding: 10px;">
+                    <h3 style="color: #fff;"> &nbsp;&nbsp;&nbsp;auxesisdevelopment@gmail.com</h3>
+                </div>
+                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+
+                    <p>
+                        <strong style="color: rgb(143, 139, 139);">Govind Mishara</strong><a href="tel:+91 7303018407"
+                            class=" fa fa-phone"
+                            style="color: rgb(255, 255, 255);">&nbsp;&nbsp;:&nbsp;7303018407</a><br>
+                        <strong style="color: rgb(143, 139, 139);">Prafull Gawade</strong><a href="tel:+91 7303018407"
+                            class=" fa fa-phone"
+                            style="color: rgb(255, 255, 255);">&nbsp;&nbsp;:&nbsp;8788919406</a><br>
+                    </p>
+
+                </div>
+                <div class="col-lg-3 text-center text-md-start">
+                    <p>
+                        <a href="https://www.instagram.com/aux_esis/"
+                            class="nav-link fa fa-instagram"></a>&nbsp;&nbsp;&nbsp;Instagram<br>
+                        <a href="https://www.facebook.com/profile.php?id=100071115429787" class="nav-link fa fa-facebook"></a>&nbsp;&nbsp;&nbsp;Facebook
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright text-center py-3 custom-bg" style="color: rgb(255, 255, 255);">© 2021 Copyright: <a
+                href="https://bootstrapmade.com/">AuxesisDevelopment</a>
+        </div>
+
+    </footer>
+</body>
+
+</html>
